@@ -2,8 +2,9 @@
  * @Author: dmc 1755875003@qq.com
  * @Date: 2023-04-07 10:41:17
  * @LastEditors: dmc 1755875003@qq.com
- * @LastEditTime: 2023-04-07 21:20:32
+ * @LastEditTime: 2023-04-07 23:36:02
  * @FilePath: \DataStructure\LinearTable\Sequencetable.cpp
+ * @Discribution: 顺序表实现线性表
  */
 
 #include<iostream>
@@ -34,7 +35,7 @@ public:
         arr=new T[maxSize];
     }
     ~Sequencetable(){
-
+        delete arr;
     }
     /**
      * @description: 在顺序表的第i个位置插入元素,1<=i<=length+1,i-1为数组下标
